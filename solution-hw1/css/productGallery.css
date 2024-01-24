@@ -1,0 +1,31 @@
+#line {
+    border-bottom: 5px solid black;
+    display: block;
+}
+
+#navigation {
+    text-align: center;
+    font-size: 20px;
+}
+
+#description {
+    text-align: center;
+    font-size: 40px;
+}
+
+#gallery img {
+    border: 3px solid black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#gallery p {
+    font-size: 20px;
+    margin-left: 380px;
+    line-height: 0.3;
+}
+
+#gallery {
+    padding: 10px;
+}
