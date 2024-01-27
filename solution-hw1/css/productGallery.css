@@ -3,9 +3,15 @@
     display: block;
 }
 
+#yellow {
+    background-color: yellow;
+    font-weight: bold;
+}
+
 #navigation {
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
+    margin-bottom: 100px;
 }
 
 #description {
@@ -13,19 +19,50 @@
     font-size: 40px;
 }
 
-#gallery img {
-    border: 3px solid black;
-    display: block;
+.gallery {
+    width: 400px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
+    text-align: left;
+    padding: 10px;
+} 
+
+#product-image {
+    display: flex;
+    justify-content: center;
 }
 
-#gallery p {
-    font-size: 20px;
-    margin-left: 380px;
+.gallery img {
+    border: 3px solid black;
+}
+
+.gallery p {
+    font-size: 23px;
     line-height: 0.3;
 }
 
-#gallery {
-    padding: 10px;
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+a {
+    color: black;
+    text-decoration: underline;
+    font-weight: 10;
+}
+
+div a:hover{
+    font-weight: 600;
+    background-color: yellow;
+}
+
+nav a:hover{
+    font-weight: 600;
+    background-color: yellow;
+}
+
+div.gallery:hover {
+    background: yellow;
 }
