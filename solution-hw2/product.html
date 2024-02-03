@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <head>
+    <title>Product Gallery</title>
+    <link rel="stylesheet" type="text/css" href="../solution-hw1/css/product.css">
+  </head>
+  
+  <body>
+
+    <logo>
+      <a href="./index.html">
+            <img src= "assets/logo/logo-01.svg" 
+                  width= "400"/>
+      </a>
+    </logo>
+
+    <span id= "line"></span>
+
+    <nav id= "navigation">
+      <h1>
+        <a href= "./index.html" id="yellow">PRODUCTS</a>
+      </h1>
+      <h1>
+        <a href= "./cart.html">CART</a>
+      </h1>
+    </nav>
+
+    <div class= "gallery">
+      <p class= "title">Original cinnamon roll</p>
+      <div id="product-image">
+        <img src= "assets/products/original-cinnamon-roll.jpg"
+              width= "400"
+              height="400" />
+      </div>
+    </div>  
+
+    <p class= "text">Customize our delicious, hand-made cinammon roll to your liking!</p>
+
+    <div class= "gallery">
+      <div class= "options">
+        <p class= "header">Glazing:</p>
+        <div class="dropdown">
+          <button id= "button1">Keep original</button>
+          <div class="up-arrow"></div> 
+          <div class="dropdown-options">
+            <a href="#">Sugar milk</a>
+            <a href="#">Vanilla milk</a>
+            <a href="#">Double chocolate</a>
+          </div>
+        </div>
+      </div>
+
+      <div class= "options">
+        <p class= "header">Pack size:</p>
+        <div class="dropdown">
+          <button id= "button2">1</button>
+          <div class="dropdown-options2">
+            <a href="#">3</a>
+            <a href="#">6</a>
+            <a href="#">12</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class= "bottom">
+      <div id= "price">
+        <p>$2.49</p>
+      </div>
+      <div id= "cart">
+        <p>Add to Cart</p>
+      </div>
+    </div>
+
+
+  </body>
+</html>
