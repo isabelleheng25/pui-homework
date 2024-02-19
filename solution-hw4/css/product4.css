@@ -131,16 +131,12 @@ p.header {
 
 #add {
     font-weight: bold;
-    font-size:20px;
+    font-size:19px;
     border: 1px solid black;
     width: 150px;
     padding: 10px 20px;
     text-align: center;
     background-color: yellow;
-}
-
-button:hover {
-  cursor:grab/pointer;
 }
 
 .bottom {
