@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <head>
+    <title>Product Gallery</title>
+    <link rel="stylesheet" type="text/css" href="../solution-hw5/css/product5.css">
+  </head>
+  
+  <body>
+
+    <div class="header">
+      <div class="logo">
+        <a href= "./index5.html">
+          <img src= "assets/logo/logo-01.svg"
+                width= "400"/>
+         </a>
+      </div>
+
+      <div class= "navigation">
+
+        <div class="links">
+          <div class="nav1">
+            <h1>
+              <a href= "./index5.html" id= "yellow">PRODUCTS</a>
+            </h1>
+          </div>
+          <div class="nav2">
+            <h1>
+              <a href= "./cart5.html">CART</a>
+              <span class="count">2</span>
+            </h1>
+          </div>
+        </div>
+        
+        <div class="line"></div>
+
+        <div class="description">
+          <p id="product">
+            Our hand-made cinnamon rolls 
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="page">
+
+      <div class= "gallery">
+        <div id="product-image">
+          <img id="roll-img" src= ""
+                width= "600"
+                height="600" />
+        </div>
+      </div>  
+  
+      <div class="content">
+        
+        <div class="text">
+          <p>Customize our delicious,</p>
+          <p>hand-made cinammon roll to</p>
+          <p>your liking!</p>
+        </div>
+        
+        <div class= "gallery">
+          <div class= "options">
+            <p class= "header">Glazing:</p>
+            <div class="dropdown">
+
+              <select id="glazing" onchange="updatePrice()">
+                <option value="Keep original" data-price=0>Keep original</option>
+                <option value="Sugar milk" data-price=0>Sugar milk</option>
+                <option value="Vanilla milk" data-price=0.50>Vanilla milk</option>
+                <option value="Double chocolate" data-price="1.50">Double chocolate</option>
+              </select>
+            </div>
+          </div>
+    
+          <div class= "options">
+            <p class= "header">Pack size:</p>
+            <div class="dropdown">
+              <select id="pack" onchange="updatePrice()">
+                <option value="1" data-price=1>1</option>
+                <option value="3" data-price=3>3</option>
+                <option value="6" data-price=5>6</option>
+                <option value="12" data-price=10>12</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class= "bottom">
+          <div id= "price">
+            <p id="output"></p>
+          </div>
+          <div id= "cart">
+            <button id="add" onclick="add()">Add to Cart</button>
+          </div>
+        </div>
+        
+      </div>
+      
+
+    </div>
+
+    
+    
+    
+
+    <script src="../solution-hw5/js/rollsData.js"></script>
+    <script src="../solution-hw5/js/productPage.js"></script>
+  </body>
+</html>
