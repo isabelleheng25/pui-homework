@@ -11,6 +11,7 @@ class Roll {
   }
 
 function addRoll(rollImage, rollType, rollGlazing, packSize, calculatedPrice) {
+
     const roll = new Roll(rollImage, rollType, rollGlazing, packSize, calculatedPrice);
     rollSet.add(roll);
     return roll;
