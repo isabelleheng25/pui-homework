@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Gallery</title>
+    <link rel="stylesheet" type="text/css" href="../solution-hw6/css/cart6.css">
+    <script defer src="../solution-hw6/js/rollsData.js"></script>
+    <script defer src="../solution-hw6/js/remove.js"></script>
+  </head>
+  
+  <body>
+    
+    <div class="header">
+      <div class="logo">
+        <a href= "./index6.html">
+          <img src= "assets/logo/logo-01.svg"
+                width= "400"/>
+         </a>
+      </div>
+
+      <div class= "navigation">
+        <div class="links">
+          <div class="nav1">
+            <h1>
+              <a href= "./index6.html">PRODUCTS</a>
+            </h1>
+          </div>
+          <div class="nav2">
+            <h1>
+              <a href= "./cart6.html" id= "yellow">CART</a>
+              <span class="count"></span>
+            </h1>
+          </div>
+        </div>
+        
+        <div class="line"></div>
+
+        <div class="description">
+          <p>
+            Our hand-made cinnamon rolls 
+          </p>
+        </div>
+
+
+        <div class= "page">
+          <template id="roll-template">
+            <div id="copy">
+              <div class="item">
+                <div class="left">
+                  <div id="product-image">
+                    <img class="image" src= "assets/products/original-cinnamon-roll.jpg"
+                          width= "200"
+                          height="200" />
+                  </div>
+                  <div class="details">
+                    <p class="roll-type">Original Cinnamon Roll</p>
+                    <p class="glaze">Glazing: Keep original</p>
+                    <p class="pack">Pack Size: 1</p>
+                  </div>
+                </div>
+                
+                <div class="price">
+                  <p id="output">$2.49</p>
+                </div>
+              </div> 
+        
+              <div class="remove">
+                <button id= "delete" onclick="updateTotalPrice()">Remove</button>
+              </div>
+            </div>
+          </template>
+        </div> 
+
+
+        <div class= "footer">
+          <div class="total">
+            <p>Total</p>
+          </div>
+    
+          <div class="pay">
+            <div>
+              <p id="total-price"></p>
+            </div>
+      
+            <div class= "checkout">
+              <p>Checkout</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+   
+
+    
+  </body>
+</html>
